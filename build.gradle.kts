@@ -12,18 +12,11 @@ repositories {
     mavenCentral()
 }
 
-java {
-    sourceCompatibility = JavaVersion.toVersion(23)
-    targetCompatibility = JavaVersion.toVersion(23)
-}
-
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("com.fasterxml.jackson.dataformat:jackson-dataformat-yaml")
-
     compileOnly("org.projectlombok:lombok")
     annotationProcessor("org.projectlombok:lombok")
-
     annotationProcessor("org.springframework.boot:spring-boot-configuration-processor")
 }
 
